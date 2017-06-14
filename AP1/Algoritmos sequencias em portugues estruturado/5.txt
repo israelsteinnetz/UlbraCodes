@@ -1,0 +1,17 @@
+Variaveis
+
+Real=N1,N2,N3,MA;
+
+Inicio
+
+Leia(N1: “,N1);
+
+Leia(N2: “,N2);
+
+Leia(N3: “,N3);
+
+MA=(N1+N2+N3) /3;
+
+Escreva(“A media,:”MA);
+
+Fim

@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+#include<conio.h>
+
+main()
+
+{
+
+int senha;
+
+scanf("%d", &senha);
+
+while(senha!=123)
+
+{
+
+printf("Senha Incorreta. Informe novamente: ");
+
+scanf("%d", &senha);
+
+}
+
+getche();
+
+}

@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+#include <conio.h>
+
+main()
+
+{
+
+int idade;
+
+char resposta='n';
+
+float altura, alturaAcumulada=0, cont=0;
+
+
+
+fflush(stdin);
+
+do{
+
+printf("Digite a sua idade: ");
+
+scanf("%d", &idade);
+
+fflush(stdin);
+
+printf("Digite a sua altura: ");
+
+scanf("%f", &altura);
+
+fflush(stdin);
+
+if(idade>=50){
+
+alturaAcumulada=alturaAcumulada+altura;
+
+cont++;
+
+}
+
+printf("Voce deseja digitar mais dados? (Responda com 's' para sim ou 'n' para nao): ");
+
+scanf("%c", &resposta);
+
+}while(resposta!='n');
+
+alturaAcumulada=alturaAcumulada/cont;
+
+printf("\nA media da altura das pessoas com mais de 50 anos e: %.2f",
+
+alturaAcumulada);
+
+getche();
+
+}

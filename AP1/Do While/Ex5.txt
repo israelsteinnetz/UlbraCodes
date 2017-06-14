@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+#include <conio.h>
+
+main()
+
+{
+
+int n=0,c=1,calculo;
+
+printf("Digite um numero: ");
+
+scanf("%d",&n);
+
+while (c<=10) {
+
+calculo=n*c;
+
+printf("%d x %d = %d\n",c,n,calculo);
+
+c++;
+
+}
+
+getche();
+
+}

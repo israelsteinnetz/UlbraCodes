@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+ int x, contMais60=0;
+ float peso, maisPesadoMenos60=0, maisPesado60=0, media;
+ 
+ for(x=1;x<=5;x++)
+ {
+  printf("Digite o peso do individuo: ");
+  scanf("%f", &peso);
+  if(peso>=60)
+  {
+   contMais60++;
+   maisPesado60=maisPesado60+peso;
+  }
+  if((peso<60) && (peso>maisPesadoMenos60))
+   maisPesadoMenos60=peso;
+ }
+ media=maisPesado60/contMais60;
+ printf("Media aritmetica das pessoas que possuem mais de 60kg: %.2f", media);
+ printf("O peso mais pesado entre aqueles que possuem menos de 60kg: %.2f", maisPesadoMenos60);
+
+ getche();
+}

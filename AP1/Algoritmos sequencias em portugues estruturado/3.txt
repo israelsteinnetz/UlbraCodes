@@ -1,0 +1,19 @@
+Variaveis
+
+Real=valor1, valor2, total
+
+Inicio
+
+Escreva(“digite o valor1:”);
+
+Leia(valor1)
+
+Escreva(“digite o valor2:”);
+
+Leia(valor2)
+
+Total=valor1+valor2;
+
+Escreva(“valor total:”total);
+
+Fim

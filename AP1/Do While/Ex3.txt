@@ -1,0 +1,35 @@
+3)
+
+#include<stdio.h>
+
+#include<conio.h>
+
+main()
+
+{
+
+int x, soma=0, cont=0;
+
+do{
+
+printf("\nDigite um numero: ");
+
+scanf("%d", &x);
+
+if(x>0)
+
+soma=soma+x;
+
+if(x==0)
+
+cont++;
+
+}while(x>=0);
+
+printf("\nSoma dos numeros positivos: %d ", soma);
+
+printf("\nQuantidade de zeros: %d ", cont);
+
+getche();
+
+}

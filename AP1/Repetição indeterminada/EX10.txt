@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int x, cont=0, valor, conta=0;
+
+ for(x=1;x<=10;x++)
+ {
+  printf("\nDigite um valor; ");
+  scanf("%d", &valor);
+  if((valor>=10)&&(valor<=20))
+  {
+  cont++;
+}
+  else
+{
+      
+  conta++;
+  
+ }
+ }
+  printf("\nQuantidade de numeros dentro do intervalo de 10 e 20: %d\n\nQuantidade de numeros fora do intervalo de 10 e 20: %d", cont, conta);
+  
+  getche();
+ }

@@ -1,0 +1,13 @@
+Variaveis
+
+Inteiro=NUM
+
+Inicio
+
+Escreva(“digita um numero:”);
+
+Leia(NUM)
+
+Escreva(“o quadrado de NUM é”, NUM*NUM);
+
+Fim

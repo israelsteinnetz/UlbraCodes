@@ -1,0 +1,17 @@
+Variaveis
+
+Inteiro=nr_coelhos
+
+Real=custo
+
+Inicio
+
+Escreva(“informe o numero de coelhos:”);
+
+Leia(nr_coelhos)
+
+Custo=n_coelhos/18+10;
+
+Escreva(“o custo de criação é: “,(custo));
+
+Fim

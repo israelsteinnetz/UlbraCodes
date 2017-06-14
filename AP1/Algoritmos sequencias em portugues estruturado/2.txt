@@ -1,0 +1,37 @@
+Variaveis
+
+Real=valor_unitario_peça1, valor_unitario_peça2
+
+Inteiro=cod_peça1, cod_peça2, n_vendidas_peça1, n_vendidas_peça2
+
+Inicio
+
+Escreva(“digite o código da peça1:”);
+
+Leia(cod_peça1)
+
+Escreva(“digite a quantidade vendida:”);
+
+Leia(n_vendidas_peça1)
+
+Escreva(“digite o valor unitário da peça1:”);
+
+Leia(valor_unitario_peça1)
+
+Escreva(“digite o código da peça2:”);
+
+Leia(cod_peça2)
+
+Escreva(“digite a quantidade vendida:”);
+
+Leia(n_vendidas_peças2)
+
+Escreva(“digite o valor unitário da peça2:”);
+
+Leia(valor_unitario_peça2)
+
+Total=valor_uniutario_peça1*quant_peças1+valor_unitario_peças2*quant_peças2;
+
+Escreva(“valor total:”,total);
+
+Fim

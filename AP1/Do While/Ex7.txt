@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+#include<conio.h>
+
+main()
+
+{
+
+int codigo, cont=0, codMaior, codMenor;
+
+float preco, media, precoMaior=0, precoMenor, total=0;
+
+do{
+
+printf("\nDigite o codigo do produto: ");
+
+scanf("%d", &codigo);
+
+printf("\nDigite o preco do produto: ");
+
+scanf("%f", &preco);
+
+if(cont==0 | preco<precoMenor)
+
+{precoMenor=preco;
+
+codMenor=codigo;
+
+}
+
+cont++;
+
+if(preco>precoMaior)
+
+{
+
+precoMaior=preco;
+
+codMaior=codigo;
+
+}
+
+total=total+preco;
+
+}while(codigo!=100);
+
+media=total/cont;
+
+printf("\nMedia de precos:%.2f", media);
+
+printf("\nCodigo do produto mais caro:%d", codMaior);
+
+printf("\nCodido do produto mais barato:%d", codMenor);
+
+getche();
+
+}

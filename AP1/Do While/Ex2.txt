@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+#include<conio.h>
+
+main()
+
+{
+
+int x, soma, cont=0;
+
+do{
+
+printf("\nDigite um numero: ");
+
+scanf("%d", &x);
+
+soma=x%2;
+
+cont++;
+
+}while(soma!=0);
+
+printf("\nQuantidade lida de numeros foi: %d ", cont);
+
+getche();
+
+}

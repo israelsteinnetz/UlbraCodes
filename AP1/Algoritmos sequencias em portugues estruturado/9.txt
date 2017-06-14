@@ -1,0 +1,21 @@
+Variaveis
+
+Inteiro=compra_percentual_venda
+
+Real=compra,lucro,venda
+
+Inicio
+
+Escreva(“informe o preço da compra:”);
+
+Leia(compra)
+
+Escreva(“informe a porcentagem de lucro:”);
+
+Leia(lucro)
+
+Venda=(compra*lucro)/100)+compra);
+
+Escreva(“preço de venda é:”,venda);
+
+Fim

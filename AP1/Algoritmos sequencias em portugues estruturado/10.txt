@@ -1,0 +1,21 @@
+Variaveis
+
+Inteiro=p_produto
+
+Real=q_comprada, p_compra
+
+Inicio
+
+Escreva(“digite o valor do produto:”);
+
+Leia(p_produto)
+
+Escreva(“digite a quantidade comprada:”);
+
+Leia(q_comprada)
+
+Valor=q_comprada*p_produto;
+
+Escreva(“Preço a pagar pela comprar:”);
+
+Fim

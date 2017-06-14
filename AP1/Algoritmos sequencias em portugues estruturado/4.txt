@@ -1,0 +1,23 @@
+Variáveis
+
+Real=A,B
+
+Inicio
+
+Escreva(“informe um numero:”);
+
+Leia(A);
+
+Escreva(“informe outro numero:”);
+
+Leia(B);
+
+Escreva(&#39;A Soma dos números é: &#39;, (A + B));
+
+Escreva(‘A Subtração dos números é: &#39;, (A - B));
+
+Escreva(&#39;A Multiplicação dos números é: &#39;, (A * B));
+
+Escreva(&#39;A Divisão dos números é: &#39;, (A + B));
+
+Fim

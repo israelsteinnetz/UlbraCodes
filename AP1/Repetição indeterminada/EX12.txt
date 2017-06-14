@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+ int x, codigo, codigomaior;
+ float altura, maior;
+for(x=1;x<=10;x++){
+printf("Digite o codigo do aluno: ");
+scanf("%d", &codigo);
+printf("Digite a altura do aluno: ");
+scanf("%f", &altura);
+if(altura>maior)
+{
+maior=altura;
+codigomaior=codigo;
+}
+}
+
+printf("\nCodigo do aluno mais alto: %d ", codigomaior );
+printf("\nAltura do aluno mais alto: %.2f ", maior);
+getch();
+}

@@ -1,0 +1,25 @@
+Variáveis
+
+Real=n_horas, valor_horas, salario;
+
+Inteiro=n_funcionario;
+
+Inicio
+
+Escreva(“digite o numero do funcionário:”);
+
+Leia(n_funcionario);
+
+Escreva(“numero de horas trabalhadas:”);
+
+Leia(n_horas);
+
+Escreva(“valor da hora:”);
+
+Leia(valor_hora);
+
+Salario=n_horas*valor_hora;
+
+Escreva (”salario do funcionário:”,salario);
+
+Fim
