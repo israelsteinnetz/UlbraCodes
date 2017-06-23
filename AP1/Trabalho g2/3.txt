@@ -1,0 +1,43 @@
+#include <conio.h>
+	#include <stdio.h>
+	
+
+	main()
+	{
+		int Num, Cont=0, Soma=0, NumIm=0, SomaIm;
+		float Media=0;
+		
+		do
+		{
+		
+			printf("\nDigite um numero: ");
+			scanf ("%d", &Num);
+			
+			if (Num!=0)
+			{
+				if (Num < 0)
+				{
+				
+					Soma=Soma+Num;
+				}
+				if  (Num % 2 == 0)
+				{
+		
+					Cont++;
+				}	
+				else 
+				{
+					NumIm++;
+					SomaIm=SomaIm+Num;
+					
+				}
+			}
+		}
+		while (Num!=0);
+		
+		if(NumIm!=0) Media=SomaIm/NumIm;
+		else Media=0;
+		printf("\nMedia dos impares: %.2f", Media);
+		printf("\nSoma dos negativos: %d", Soma);
+		printf("\nQuantidade dos pares: %d", Cont);
+	}

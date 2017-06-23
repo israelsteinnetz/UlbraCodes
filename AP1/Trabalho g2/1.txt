@@ -1,0 +1,25 @@
+#include <conio.h>
+	#include <stdio.h>
+	
+
+	main()
+	{
+		int Eggs, Cake, Sugar, Nescau, Ferm, Far;
+		
+		do
+		{
+			printf("\n\nQuantos bolos para encomenda? ");
+			scanf ("%d", &Cake);
+			
+			Far=500*Cake;
+			Eggs=6*Cake;
+			Sugar=200*Cake;
+			Nescau=200*Cake;
+			Ferm=1*Cake;
+			
+			printf("Foram encomendados %d bolos.\n", Cake);
+			printf ("\nForam utilizados:\n%dg Farinha \n%dU Ovos \n%dg Acucar \n%dg Nescau \n%d Colher Fermento", Far, Eggs, Sugar, Nescau, Ferm );
+		}
+		while (Cake!=0);
+		getche();	
+	}

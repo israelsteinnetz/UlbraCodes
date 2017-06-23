@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <conio.h>
+main(){
+	
+	int codigo;
+	char sexo;
+	int idade;
+	int idademaisvelho=0;
+	int codigomaisvelho=0;
+	float idademediaalunas;
+	int idadealunas;
+	int countsexoF=0;
+	int countsexoM=0;
+	
+	do{
+		printf("\nQual seu codigo: ");
+		scanf("%d",&codigo);
+		if(codigo==0){
+			break;
+		}
+		printf("\nDigite F-Feminino ou M-Masculino: ");
+		fflush(stdin);
+		scanf("%c",&sexo);
+		do{
+		printf("\nQual sua idade: ");
+		scanf("%d",&idade);
+		}while(idade<15 || idade>80);
+		if(idade>idademaisvelho){
+			idademaisvelho=idade;
+			codigomaisvelho=codigo;
+			codigo++;
+		}
+		if(sexo=='F' || sexo=='f'){
+			countsexoF++;
+			idadealunas=idadealunas+idade;
+		}
+		if(sexo=='M' || sexo=='m'){
+			countsexoM++;
+		}
+	}while(codigo!=0);
+	idademediaalunas=idadealunas/countsexoF;
+	printf("\nCodigo mais velho: %d\nIdade mais velho: %d\nIdade media das alunas: %.2f\nEstudantes do sexo masculino: %d\nEstudantes do sexo feminino: %d",codigomaisvelho,idademaisvelho,idademediaalunas,countsexoM,countsexoF);
+	getche();

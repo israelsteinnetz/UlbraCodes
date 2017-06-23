@@ -1,0 +1,43 @@
+#include <conio.h>
+	#include <stdio.h>
+	
+
+	main()
+	{
+		int Prod, x, Quant, QuantM=0, Decisao, Cod;
+		
+		do
+		{
+			printf ("\nCodigo do produto: ");
+			scanf ("%d", &Cod);
+			
+			printf ("Quantidade em estoque: ");
+			scanf ("%d", &Quant);
+			
+			printf ("Quantidade minima: ");
+			scanf ("%d", &QuantM);
+			
+			printf ("Quantidade de produto: ");
+			scanf ("%d", &Prod);
+			
+			printf("Escolha: 0-Encerrar, 1-Entrada, 2-Saida. ");
+			scanf ("%d", &x);
+		
+			if(x==1)
+			{
+				Decisao=Quant+Prod;
+				printf ("%d + %d = %d", Quant, Prod, Decisao);
+			}
+			else
+			{
+				Decisao=Quant-Prod;
+				printf ("%d - %d = %d", Quant, Prod, Decisao);	
+			}
+			if (Decisao<=QuantM)
+				printf("\nEstoque baixo, solicite compra de produto");
+			else if (Decisao <=0)
+				printf("\nEstoque insuficiente.");
+		}
+		while (x!=0);
+		getche();
+	}
